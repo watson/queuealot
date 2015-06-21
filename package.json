@@ -1,7 +1,7 @@
 {
   "name": "queuealot",
   "version": "0.0.0",
-  "description": "Bike shed queing module",
+  "description": "Bike shed queing module using closures for augmenting each result",
   "main": "index.js",
   "dependencies": {
     "after-all-results": "^2.0.0",
@@ -27,7 +27,8 @@
     "queueing",
     "callback",
     "serie",
-    "series"
+    "series",
+    "closure"
   ],
   "author": "Thomas Watson Steen <w@tson.dk> (https://twitter.com/wa7son)",
   "license": "MIT"
