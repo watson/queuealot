@@ -1,11 +1,11 @@
 'use strict'
 
 var test = require('tape')
-var Queue = require('./')
+var queuealot = require('./')
 
 test('no jobs', function (t) {
   var called = false
-  Queue(function () {
+  queuealot(function () {
     called = true
   })
   setTimeout(function () {
@@ -15,7 +15,7 @@ test('no jobs', function (t) {
 })
 
 test('2 jobs', function (t) {
-  var queue = Queue(function (err, results) {
+  var queue = queuealot(function (err, results) {
     t.error(err)
     t.deepEqual(results, ['r12foo', 'r34foo'])
     t.end()
@@ -43,7 +43,7 @@ test('2 jobs', function (t) {
 
 test('error', function (t) {
   var calls = 0
-  var queue = Queue(function (err, results) {
+  var queue = queuealot(function (err, results) {
     t.equal(err, 'error')
     t.equal(calls, 2)
     t.deepEqual(results, ['r12foo', 'r34'])

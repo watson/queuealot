@@ -19,10 +19,10 @@ npm install queuealot
 ## Usage
 
 ```js
-var Queue = require('queuealot')
+var queuealot = require('queuealot')
 
 // initialize a new queue
-var queue = Queue(function (err, results) {
+var queue = queuealot(function (err, results) {
   if (err) throw err
   console.log(results) // => ['foo']
 })
@@ -48,10 +48,10 @@ reading a bunch of files and want to know the filename that generated
 each result:
 
 ```js
-var Queue = require('queuealot')
+var queuealot = require('queuealot')
 var fs = require('fs')
 
-var queue = Queue(function (err, files) {
+var queue = queuealot(function (err, files) {
   if (err) throw err
   files.forEach(function (file) {
     console.log(file.path)
