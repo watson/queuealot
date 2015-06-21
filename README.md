@@ -37,7 +37,7 @@ queue(function (callback) {
 
 **Gotcha: Add all the jobs to the queue before the next tick.** The
 queue expects that all jobs are added to the queue within the same tick
-as the queue was initialized. On the next tick the queue will run and
+as the queue was initialized. On the next tick the queue will run,
 execute all jobs on the queue and call the final function given when
 initialized.
 
