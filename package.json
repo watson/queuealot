@@ -1,0 +1,34 @@
+{
+  "name": "queuealot",
+  "version": "0.0.0",
+  "description": "Bike shed queing module",
+  "main": "index.js",
+  "dependencies": {
+    "after-all-results": "^2.0.0",
+    "mutexify": "^1.1.0"
+  },
+  "devDependencies": {
+    "standard": "^4.3.1",
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watson/queuealot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/watson/queuealot/issues"
+  },
+  "homepage": "https://github.com/watson/queuealot",
+  "keywords": [
+    "queue",
+    "queueing",
+    "callback",
+    "serie",
+    "series"
+  ],
+  "author": "Thomas Watson Steen <w@tson.dk> (https://twitter.com/wa7son)",
+  "license": "MIT"
+}
