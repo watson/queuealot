@@ -31,7 +31,7 @@ var queue = queuealot(function (err, results) {
 queue(function (callback) {
   // do your stuff here and call the callback when done with an optional
   // error and the result
-  callback(null, 'bar')
+  callback(null, 'foo')
 })
 ```
 
